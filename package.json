@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node ./bin/www",
-    "build": "ng build",
+    "start": "ng build --prod && node ./bin/www",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.0",
+    "@angular/cdk": "^6.0.0",
     "@angular/common": "^6.0.0",
     "@angular/compiler": "^6.0.0",
     "@angular/core": "^6.0.0",
@@ -29,8 +30,7 @@
     "morgan": "^1.9.0",
     "rxjs": "^6.0.0",
     "serve-favicon": "^2.5.0",
-    "zone.js": "^0.8.26",
-    "@angular/cdk": "^6.0.0"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.1",

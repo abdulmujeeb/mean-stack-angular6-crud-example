@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class BookDetailComponent implements OnInit {
 
-  book = {};
+  book: any = {};
 
   constructor(private route: ActivatedRoute, private api: ApiService, private router: Router) { }
 
